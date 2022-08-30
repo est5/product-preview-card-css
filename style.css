@@ -1,0 +1,114 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  background-color: initial;
+}
+
+/* BASIC */
+
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+
+  --dark-blue: hsl(212, 21%, 14%);
+  --grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  font-size: 14px;
+}
+
+/* STYLE */
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cream);
+  min-height: 100vh;
+}
+
+.card {
+  background-color: var(--white);
+  display: flex;
+  border-radius: 5px;
+}
+
+.card__img {
+  border-radius: 5px 5px 0 0;
+}
+
+.card__discount {
+  text-decoration: line-through;
+  color: var(--grayish-blue);
+  font-size: 12px;
+  font-family: 'Montserrat';
+}
+
+.card__discounted {
+  color: var(--dark-cyan);
+  font-family: 'Fraunces';
+  font-size: 25px;
+}
+
+.card__price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card__add-to-cart {
+  background-color: var(--dark-cyan);
+  color: var(--white);
+  display: flex;
+  width: 100%;
+  border-radius: 5px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+}
+.card__title {
+  font-size: 25px;
+  font-family: 'Fraunces';
+  color: var(--dark-blue);
+}
+
+.card__info {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--grayish-blue);
+}
+
+.card__type {
+  font-family: 'Montserrat';
+  font: 500;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: var(--grayish-blue);
+}
+/* MEDIA QUERIES */
+@media (max-width: 375px) {
+  .card {
+    width: 80vw;
+    flex-direction: column;
+  }
+
+  .card__content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
