@@ -98,11 +98,24 @@ body {
   letter-spacing: 5px;
   color: var(--grayish-blue);
 }
+
+.card__img--mobile {
+  display: none;
+}
+
 /* MEDIA QUERIES */
 @media (max-width: 375px) {
   .card {
     width: 80vw;
     flex-direction: column;
+  }
+
+  .card__img--desktop {
+    display: none;
+  }
+
+  .card__img--mobile {
+    display: initial;
   }
 
   .card__content {
