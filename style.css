@@ -21,7 +21,7 @@ button {
 }
 
 body {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 /* STYLE */
@@ -38,27 +38,27 @@ body {
   background-color: var(--white);
   display: flex;
   border-radius: 5px;
-  width: 750px;
-  height: 550px;
+  width: 560px;
+  height: 450px;
 }
 
 .card__discount {
   text-decoration: line-through;
   color: var(--grayish-blue);
-  font-size: 12px;
+  font-size: 15px;
   font-family: 'Montserrat';
 }
 
 .card__discounted {
   color: var(--dark-cyan);
   font-family: 'Fraunces';
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .card__price {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
 }
 
 .card__add-to-cart {
@@ -75,7 +75,8 @@ body {
   font-weight: 700;
 }
 .card__title {
-  font-size: 25px;
+  font-size: 35px;
+  line-height: 32px;
   font-family: 'Fraunces';
   color: var(--dark-blue);
 }
@@ -117,14 +118,19 @@ body {
 }
 
 .card__img {
+  object-fit: cover;
   border-radius: 5px 0 0 5px;
-  flex-basis: 50%;
+}
+
+.card__img--desktop {
+  width: calc(100% / 2);
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 375px) {
+@media (max-width: 425px) {
   .card {
-    width: 80vw;
+    width: 92vw;
+    height: 600px;
     flex-direction: column;
   }
 
